@@ -41,5 +41,6 @@ db.sequelize = sequelize;
 
 db.users = require("./user.model.js")(sequelize, Sequelize);
 db.todos = require("./todo.model.js")(sequelize, Sequelize);
+db.translations = require("./translations.model.js")(sequelize, Sequelize);
 
 module.exports = db;

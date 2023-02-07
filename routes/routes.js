@@ -17,7 +17,9 @@ router.post('/register', userController.create)
 
 //Todo routes
 router.post('/todo', isAuth, todoController.create)
-router.get('/todo/:id', isAuth, todoController.getAllTodosByUser)
+router.put('/todo/:id', isAuth, todoController.update)
+router.delete('/todo/:id', isAuth, todoController.update)
+router.get('/todo/user/:id', isAuth, todoController.getAllTodosByUser)
 
 
 module.exports = router
